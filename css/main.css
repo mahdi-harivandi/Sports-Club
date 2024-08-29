@@ -32,24 +32,26 @@ header{
   left: 50%;
   transform: translate(-50% , -50%);
 }
-.banner_heading{
-  animation: anim;
-  animation-duration: 2s;
-}
-.banner_pra{
-  animation: anim;
-  animation-duration: 2s;
-  animation-delay: .2s;
-  animation-fill-mode: backwards;
-}
-@keyframes anim{
-  0%{
-    transform: translateX(-120px);
-    opacity: 0;
+@media(min-width: 768px){
+  .banner_heading{
+    animation: anim;
+    animation-duration: 2s;
   }
-  100%{
-    transform: translateX(0px);
-    opacity: 1;
+  .banner_pra{
+    animation: anim;
+    animation-duration: 2s;
+    animation-delay: .2s;
+    animation-fill-mode: backwards;
+  }
+  @keyframes anim{
+    0%{
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
 }
 /* end of banner */
@@ -92,32 +94,34 @@ header{
 .awards{
   background-color: #151f20;
 }
-.formleft{
-  animation-name: formleft;
-  animation-duration: 3s;
-}
-.formright{
-  animation-name: formright;
-  animation-duration: 3s;
-}
-@keyframes formleft{
-  0%{
-    transform: translateX(-120px);
-    opacity: 0;
+@media(min-width: 768px){
+  .formleft{
+    animation-name: formleft;
+    animation-duration: 3s;
   }
-  100%{
-    transform: translateX(0px);
-    opacity: 1;
+  .formright{
+    animation-name: formright;
+    animation-duration: 3s;
   }
-}
-@keyframes formright{
-  0%{
-    transform: translateX(30px);
-    opacity: 0;
+  @keyframes formleft{
+    0%{
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
-  100%{
-    transform: translateX(0px);
-    opacity: 1;
+  @keyframes formright{
+    0%{
+      transform: translateX(30px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
 }
 /* end of awards */
@@ -184,47 +188,49 @@ header{
   background-color: #3498bd;
   transform: translateY(-2px);
 }
-.movefromleft{
-  animation-name: movefromleft;
-  animation-duration: 3s;
-}
-.movefromright{
-  animation-name:movefromright ;
-  animation-duration: 3s;
-}
-.movefromcenter{
-  animation-name:movefromcenter ; 
-  animation-duration: 3s; 
-}
-
-@keyframes movefromleft{
-  0%{
-    transform: translateX(-100px);
-    opacity: 0;
+@media(min-width: 768px){
+  .movefromleft{
+    animation-name: movefromleft;
+    animation-duration: 3s;
   }
-  100%{
-    transform: translateX(0px);
-    opacity: 1;
+  .movefromright{
+    animation-name:movefromright ;
+    animation-duration: 3s;
   }
-}
-@keyframes movefromright{
-  0%{
-    transform: translateX(100px);
-    opacity: 0;
+  .movefromcenter{
+    animation-name:movefromcenter ; 
+    animation-duration: 3s; 
   }
-  100%{
-    transform: translateX(0px);
-    opacity: 1;
+  
+  @keyframes movefromleft{
+    0%{
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
-}
-@keyframes movefromcenter{
-  0%{
-    transform: translateY(100px);
-    opacity: 0;
+  @keyframes movefromright{
+    0%{
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
-  100%{
-    transform: translateY(0px);
-    opacity: 1;
+  @keyframes movefromcenter{
+    0%{
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
   }
 }
 /* end of membership */

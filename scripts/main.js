@@ -41,7 +41,7 @@ $(".gallery-list-item").click(function(){
 $(window).scroll(function(){
     let position = $(this).scrollTop();
     console.log(position)
-    if(position >= 4400 ){
+    if(position >= 4600 ){
         $('.card-1').addClass('movefromright')
         $('.card-2').addClass('movefromcenter')
         $('.card-3').addClass('movefromleft')
