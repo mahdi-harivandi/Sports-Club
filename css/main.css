@@ -56,10 +56,22 @@ header{
 }
 /* end of banner */
 /* navbar */
-.nav_menu{
-  background: linear-gradient(rgba(0,0,0,.3) , rgba(0,0,0,.5));
-  padding: 30px;
-  transition: all .7s;
+@media(min-width: 768px){
+  .nav_menu{
+    background: linear-gradient(rgba(0,0,0,.3) , rgba(0,0,0,.5));
+    padding: 30px;
+    transition: all .7s;
+  }
+  .custom_navbar{
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0,0,0,.6) , rgba(0,0,0,.7));
+  }
+}
+@media(max-width: 768px){
+  .custom_navbar1{
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0,0,0,.6) , rgba(0,0,0,.7));
+  }
 }
 .menu_item{
   font-size: 17px;
@@ -83,10 +95,6 @@ header{
 }
 .change .line_3{
   transform: rotate(45deg) translate(-5px , -6px);
-}
-.custom_navbar{
-  padding: 5px 30px;
-  background: linear-gradient(rgba(0,0,0,.6) , rgba(0,0,0,.7));
 }
 /* end of navbar */
 /* end of header  */
