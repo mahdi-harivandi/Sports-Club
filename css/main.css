@@ -167,6 +167,12 @@ header{
 .active-item{
   color: #70aed2;
 }
+@media(max-width: 768px){
+ .size-image{
+  width: 350px;
+  height: 230px;
+ }
+}
 /* end of gallery */
 /* trainers */
 .trainers{
